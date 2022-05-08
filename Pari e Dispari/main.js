@@ -10,19 +10,52 @@
 
 // chiedere all'utente di scegliere pari o dispari
 
-// variabile booleana vero / falso 
+let sceltaUtente = prompt("Scegli pari o dispari")
 
-// chiedere numero finché non entra nel range da 1 a 5
+const pari = sceltaUtente
+
+let numeroUtente = Number(prompt("inserire numero da 1 a 5)"));
+
 
 // il computer genera randomicamente un numero e lo salva 
 
+let numeroPc = Math.floor(Math.random() * 5) + 1;
+console.log(numeroPc);
+
 // sommare le due variabili 
 
+sum = (numeroUtente + numeroPc);
+console.log(sum);
+
+function isEven(value) {
+	if (value%2 == 0)
+		return true;
+	else
+		return false;
+}
+
+
+
 // funzione pari dispari richiamata
+isEven(sum)
+if (true)
+        if (sceltaUtente === pari){
+            console.log ("you win");
+        }else{
+            console.log(" try again");
+        }
+   
+else if (false){
+        if (sceltaUtente != pari){
+            console.log ("you win");
+        }else{
+            console.log(" try again");
+        }
+    }
 
 // se la variabile del giocatore è uguale all'esito della funzione
 
 // hai vinto
 
-// else hai perso
+// else try again
 
