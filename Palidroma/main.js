@@ -13,21 +13,27 @@ function palindroma(imput){
         console.log(reverseWord)
         if( reverseWord === word){
             console.log("è una parola palindroma");
+    }else {
+        console.log( word, "non è una parola palindroma");
     }
 }
 }
 
+// *** function ***
 
+// *** Main ***
  const word = prompt("inserire una parola");
 
  let reverseWord = ""
 
-if (word.length %2 === 0){
-    palindroma(word);
-}else
-{
-    console.log( word, "non è una parola palindroma")
-}
+ palindroma(word);
+
+// if (word.length %2 === 0){
+//     palindroma(word);
+// }else
+// {
+//     console.log( word, "non è una parola palindroma")
+
 //     for (let i = word.length - 1; i >= 0; i--) {
 //         reverseWord += word[i];
 //         console.log(reverseWord)

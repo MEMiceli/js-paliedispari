@@ -39,18 +39,18 @@ function isEven(value) {
 // funzione pari dispari richiamata
 isEven(sum)
 if (true)
-        if (sceltaUtente === pari){
+    if (sceltaUtente === pari){
             console.log ("you win");
-        }else{
+    }else{
             console.log(" try again");
-        }
-   
+    }
+  // l'else non funziona 
 else if (false){
-        if (sceltaUtente != pari){
+    if (sceltaUtente != pari){
             console.log ("you win");
-        }else{
+    }else{
             console.log(" try again");
-        }
+    }
     }
 
 // se la variabile del giocatore è uguale all'esito della funzione
