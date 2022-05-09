@@ -11,13 +11,16 @@ function palindroma(imput){
     for (let i = word.length - 1; i >= 0; i--) {
         reverseWord += word[i];
         console.log(reverseWord)
-        if( reverseWord === word){
+    }
+    if( reverseWord === word){
             console.log("è una parola palindroma");
+            return true;
     }else {
         console.log( word, "non è una parola palindroma");
+        return false;
     }
 }
-}
+
 
 // *** function ***
 
@@ -26,7 +29,12 @@ function palindroma(imput){
 
  let reverseWord = ""
 
- palindroma(word);
+ if (palindroma(word))
+ {
+     alert("parola palindroma");
+ }else {
+     alert("parola non palindroma");
+ }
 
 // if (word.length %2 === 0){
 //     palindroma(word);
